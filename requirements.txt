@@ -1,0 +1,6 @@
+spyder==6.0.2
+pandas
+numpy
+matplotlib
+scikit-learn
+rasterio
