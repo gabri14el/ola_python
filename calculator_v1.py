@@ -58,6 +58,7 @@ while(op in list(range(len(operations)))):
     a = float(input())
     
     #if 4 is selected read only a operator
+    b = None
     if not op == 4:
         print('Type the second operator: ')
         b = float(input())
@@ -66,7 +67,7 @@ while(op in list(range(len(operations)))):
     #define string aux to print the result
     aux = '=======\nThe result is: {}\n======='
     
-    result = calculator(op, a, b=b if 'b' in locals() else None)
+    result = calculator(op, a, b=b if not b is None else None)
     if result:
         print(aux.format(result))
     else:
